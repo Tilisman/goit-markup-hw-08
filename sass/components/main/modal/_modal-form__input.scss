@@ -28,6 +28,9 @@
         border-color: $accent-color;
         color: $accent-color;
     }
+    &:hover {
+        box-shadow: none;
+    }
 }
 
 .modal-label {
