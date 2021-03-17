@@ -1,0 +1,37 @@
+//* CARD */
+.card__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    flex-basis: calc(100% / 3 - #{$set-gap});
+    border: 1px solid #eeeeee;
+    margin-left: $set-gap;
+    margin-top: $set-gap;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.card__textbox {
+    padding: 20px 24px;
+}
+
+p.card__text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
+
+.card-title {
+    margin-bottom: 4px;
+    color: $title-text-color;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}

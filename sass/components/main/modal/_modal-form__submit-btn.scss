@@ -1,0 +1,8 @@
+//* MODAL FORM SUBMIT BUTTON */
+.btn-primary.modal-btn {
+    min-width: 200px;
+    &:focus,
+    &:hover {
+        background-color: $primary-btn-accent;
+    }
+}

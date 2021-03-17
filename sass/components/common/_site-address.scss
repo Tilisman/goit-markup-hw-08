@@ -1,0 +1,44 @@
+/* Footer Address */
+
+.address {
+    color: $primary-white;
+}
+
+.footer .logo {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.address__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.address__link {
+    color: $color-lightgrey;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    transition: $transition-dur $cubic-bezier;
+    &:hover {
+        color: $primary-white;
+    }
+    &.location {
+        color: $primary-white;
+        &:hover {
+            color: $primary-text-color;
+        }
+    }
+}
+
+.address p {
+    margin: 9px 0;
+}
+
+.address p:last-child {
+    margin-bottom: 0;
+}

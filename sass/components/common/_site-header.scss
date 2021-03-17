@@ -1,0 +1,15 @@
+.container.wrapper--page-header {
+    flex-direction: row;
+}
+
+.page-header {
+    background-color: $primary-white;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    border-bottom: 0.025em solid #ececec;
+    box-sizing: border-box;
+}

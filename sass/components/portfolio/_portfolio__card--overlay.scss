@@ -1,0 +1,26 @@
+//* !=== PORTFOLIO CARD OVERLAY ===! */
+.overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 1;
+    transition: $transition-dur $cubic-bezier;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    .card:hover &,
+    .card:focus & {
+        opacity: 1;
+        transform: translateY(-100%);
+    }
+}
+
+p.overlay-text {
+    color: $primary-white;
+}

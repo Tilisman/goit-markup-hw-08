@@ -1,0 +1,23 @@
+//* LOGO */
+.__logo {
+    width: fit-content;
+    color: $accent-color;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    margin-right: 94px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.__logo--black {
+    color: $title-text-color;
+}
+
+.__logo--white {
+    color: $primary-white;
+    margin-right: 0;
+}

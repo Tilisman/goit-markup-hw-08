@@ -1,0 +1,45 @@
+.button-modal-close svg {
+    display: flex;
+    justify-content: center;
+    fill: currentColor;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: $transition-dur $cubic-bezier;
+}
+
+.button-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    &:focus {
+        box-shadow: 0px 0px 0px 3px $primary-btn-accent;
+    }
+    &:hover {
+        box-shadow: none;
+    }
+    &:active {
+        color: $accent-color;
+    }
+}
+
+.button-modal-close svg {
+    transition: $transition-dur $cubic-bezier;
+    &:hover {
+        color: $accent-color;
+        cursor: pointer;
+    }
+}
+
+.button-modal-close:focus+svg {
+    fill: currentColor;
+}

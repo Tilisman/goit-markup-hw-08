@@ -1,0 +1,12 @@
+.container {
+    max-width: $cont-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    @media (max-width: 500px) {
+        $mobile-container: 450px;
+        max-width: $mobile-container;
+    }
+}

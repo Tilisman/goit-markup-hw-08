@@ -1,0 +1,23 @@
+//* !=== FOOTER ===! */
+.footer {
+    padding: 60px 0;
+    background-color: $primary-background;
+    width: 100vw;
+}
+
+.footer__container--decor {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 1170px;
+}
+
+.footer__title {
+    color: $primary-white;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
