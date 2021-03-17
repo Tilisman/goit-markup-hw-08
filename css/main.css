@@ -5,6 +5,13 @@ body {
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0px 3px #188ce8;
+          box-shadow: 0px 0px 0px 3px #188ce8;
+  border-radius: 2px;
+}
+
 h2,
 h3,
 h4,
@@ -147,15 +154,24 @@ address {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #188ce8;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0px 0px 0px 3px #188ce8;
+          box-shadow: 0px 0px 0px 3px #188ce8;
+}
+
+.btn-primary:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-primary:hover .backdrop,
 .btn-primary:focus .backdrop {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #188ce8;
 }
 
 .container.wrapper--page-header {
@@ -407,7 +423,7 @@ address {
 }
 
 .address__link.location:hover {
-  color: #757575;
+  color: #2196f3;
 }
 
 .address p {
@@ -520,7 +536,7 @@ address {
 
 .subscribtion-form__input {
   background-color: transparent;
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
   width: 358px;
   height: 50px;
   padding: 14px 16px;
@@ -533,11 +549,18 @@ address {
 
 .subscribtion-form__input:focus {
   outline: none;
+  -webkit-box-shadow: 0px 0px 0px 3px #188ce8;
+          box-shadow: 0px 0px 0px 3px #188ce8;
   background-color: transparent;
 }
 
+.subscribtion-form__input:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .subscribtion-form__input:not(:placeholder-shown) {
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
 }
 
@@ -999,7 +1022,7 @@ p.features__text {
   background-color: rgba(47, 48, 58, 0.8);
   -webkit-transform: translateY(-70px);
           transform: translateY(-70px);
-  min-width: 370px;
+  min-width: 369px;
 }
 
 .about__overlay--title {

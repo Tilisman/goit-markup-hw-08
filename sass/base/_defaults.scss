@@ -5,6 +5,12 @@ body {
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px $primary-btn-accent;
+    border-radius: 2px;
+}
+
 h2,
 h3,
 h4,
