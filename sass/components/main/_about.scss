@@ -1,20 +1,24 @@
 //* !=== About Section ===! */
 .about.section {
     padding-top: 0;
+    display: none;
+    @media screen and(min-width: $desktop) {
+        display: block;
+    }
 }
 
 .about__list {
-    // display: flex;
+    display: flex;
     margin: 0;
-    // margin-left: -1 * $set-gap;
-    // margin-top: -1 * $set-gap;
+    margin-left: -1 * $set-gap;
+    margin-top: -1 * $set-gap;
 }
 
 .about__item {
     width: 100%;
-    // flex-basis: calc(100% / 3 - #{$set-gap});
-    // margin-left: $set-gap;
-    // margin-top: $set-gap;
+    flex-basis: calc(100% / 3 - #{$set-gap});
+    margin-left: $set-gap;
+    margin-top: $set-gap;
 }
 
 .about__thumb {
