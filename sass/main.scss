@@ -1,8 +1,9 @@
 @import './utils/variables';
-@import './base/defaults';
 @import './utils/breakpoints';
 @import './utils/mixins';
 @import './utils/placeholders';
+@import './utils/visually-hidden';
+@import './base/defaults';
 @import './components/common/site-container';
 @import './components/common/primary-button';
 @import './components/common/site-header';
