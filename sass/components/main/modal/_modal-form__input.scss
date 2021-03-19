@@ -9,7 +9,6 @@
     &:focus {
         outline: none;
         border-color: $accent-color;
-        color: $accent-color;
     }
     &:focus+.modal__icon {
         color: $accent-color;
@@ -26,7 +25,6 @@
     &:focus {
         outline: none;
         border-color: $accent-color;
-        color: $accent-color;
     }
     &:hover {
         box-shadow: none;

@@ -2,14 +2,18 @@
 .footer {
     padding: 60px 0;
     background-color: $primary-background;
-    width: 100vw;
 }
 
-.footer__container--decor {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    max-width: 1170px;
+.container--footer {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .footer__title {

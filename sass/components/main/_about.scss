@@ -4,16 +4,17 @@
 }
 
 .about__list {
-    display: flex;
+    // display: flex;
     margin: 0;
-    margin-left: -1 * $set-gap;
-    margin-top: -1 * $set-gap;
+    // margin-left: -1 * $set-gap;
+    // margin-top: -1 * $set-gap;
 }
 
 .about__item {
-    flex-basis: calc(100% / 3 - #{$set-gap});
-    margin-left: $set-gap;
-    margin-top: $set-gap;
+    width: 100%;
+    // flex-basis: calc(100% / 3 - #{$set-gap});
+    // margin-left: $set-gap;
+    // margin-top: $set-gap;
 }
 
 .about__thumb {
@@ -28,10 +29,10 @@
     min-height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
     transform: translateY(-70px);
-    min-width: 369px;
+    width: 100%;
 }
 
-.about__overlay--title {
+.overlay__title {
     text-transform: uppercase;
     color: $primary-white;
     font-weight: bold;

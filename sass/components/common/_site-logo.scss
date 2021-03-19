@@ -1,5 +1,6 @@
 //* LOGO */
 .__logo {
+    display: block;
     width: fit-content;
     color: $accent-color;
     font-family: 'Raleway', sans-serif;
@@ -9,8 +10,11 @@
     line-height: 1.192;
     letter-spacing: 0.03em;
     margin-right: 94px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 15px 0;
+    @media (min-width: 768px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .__logo--black {
