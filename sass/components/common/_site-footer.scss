@@ -1,6 +1,5 @@
 //* !=== FOOTER ===! */
-.footer {
-    padding: 60px 0;
+.section.footer {
     background-color: $primary-background;
 }
 
@@ -14,6 +13,10 @@
         display: flex;
         align-items: baseline;
     }
+}
+
+.footer .__logo {
+    display: inline-block;
 }
 
 .footer__title {

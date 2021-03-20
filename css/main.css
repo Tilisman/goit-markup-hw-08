@@ -226,7 +226,6 @@ address {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  margin-right: 94px;
   padding: 15px 0;
 }
 
@@ -399,8 +398,7 @@ address {
   margin-right: 10px;
 }
 
-.footer {
-  padding: 60px 0;
+.section.footer {
   background-color: #2f303a;
 }
 
@@ -427,6 +425,10 @@ address {
   }
 }
 
+.footer .__logo {
+  display: inline-block;
+}
+
 .footer__title {
   color: #ffffff;
   font-weight: bold;
@@ -440,15 +442,6 @@ address {
 /* Footer Address */
 .address {
   color: #ffffff;
-}
-
-.footer .logo {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.address__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,11 +449,27 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.address__container {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__container {
+    text-align: unset;
+  }
+}
+
+@media (max-width: 1199px) {
+  .address__container .__logo {
+    padding: 0;
+  }
 }
 
 .address__link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
@@ -469,6 +478,7 @@ address {
   letter-spacing: 0.03em;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 8px;
 }
 
 .address__link:hover {
@@ -483,15 +493,10 @@ address {
   color: #2196f3;
 }
 
-.address p {
-  margin: 9px 0;
+.address__link:last-child {
+  margin: 0;
 }
 
-.address p:last-child {
-  margin-bottom: 0;
-}
-
-/* !=== Social Links ===! */
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,10 +505,24 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 70px;
+}
+
+.social--footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .social--footer {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social--footer {
+    margin-left: 70px;
+    text-align: unset;
+  }
 }
 
 .social__list {
@@ -551,18 +570,22 @@ address {
   outline: none;
 }
 
+.footer .social__item {
+  margin-bottom: 0;
+}
+
 .social__icon {
   width: 20px;
   height: auto;
   fill: currentColor;
 }
 
-.footer .social__link {
+.social__link--footer {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .social__link:hover, .footer .social__link:focus {
+.social__link--footer:hover, .social__link--footer:focus {
   background-color: #2196f3;
 }
 
@@ -571,11 +594,30 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 93px;
+  margin-top: 60px;
+}
+
+@media (max-width: 1199px) {
+  .subscribtion-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribtion-form {
+    margin-left: 93px;
+  }
 }
 
 .subscribtion-form .form {
@@ -585,10 +627,30 @@ address {
           flex-direction: row;
 }
 
+@media (max-width: 1199px) {
+  .subscribtion-form .form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .subscription-form .footer-title {
-  display: inline-block;
-  text-align: right;
+  text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form .footer-title {
+    display: inline-block;
+  }
 }
 
 .subscribtion-form__input {
@@ -597,7 +659,7 @@ address {
   width: 358px;
   height: 50px;
   padding: 14px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   -webkit-box-shadow: none;
@@ -619,6 +681,20 @@ address {
 .subscribtion-form__input:not(:placeholder-shown) {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribtion-form__input {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribtion-form__input {
+    min-width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .button-footer-icon {
