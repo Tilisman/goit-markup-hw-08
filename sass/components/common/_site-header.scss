@@ -1,11 +1,19 @@
 .container--header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
-    @media screen and (min-width: $tablet) {
-        & {
-            padding: 0px 15px;
-        }
+    padding: 0 15px;
+    // @media screen and (min-width: $tablet) {
+    //     & {
+    //         display: flex;
+    //         padding: 0px 15px;
+    //     }
+    // }
+}
+
+.header-wrapper {
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
     }
 }
 

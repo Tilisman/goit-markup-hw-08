@@ -1,5 +1,6 @@
 //* !=== PRIMARY BUTTON ===! */
 .btn-primary {
+    display: inline-block;
     background-color: $accent-color;
     color: $primary-white;
     min-width: 200px;

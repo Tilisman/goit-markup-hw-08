@@ -139,6 +139,7 @@ address {
 }
 
 .btn-primary {
+  display: inline-block;
   background-color: #2196f3;
   color: #ffffff;
   min-width: 200px;
@@ -187,12 +188,17 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 15px;
+  padding: 0 15px;
 }
 
-@media screen and (min-width: 768px) {
-  .container--header {
-    padding: 0px 15px;
+@media (min-width: 768px) {
+  .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -251,9 +257,8 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -346,7 +351,6 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -358,6 +362,12 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__item:not(:first-child) {
+    margin-left: 50px;
   }
 }
 
