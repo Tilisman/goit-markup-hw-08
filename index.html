@@ -558,18 +558,22 @@
               ></textarea>
             </label>
                 </div>
-
-                <label class="modal-label checkbox">
-            <input
-              class="modal-checkbox__input visually-hidden"
-              type="checkbox"
-            />
-            <span class="modal-checkbox__icon"></span>
-
-            Соглашаюсь с рассылкой и принимаю
-            <a href="./portfolio.html">Условия договора</a>
-          </label>
-
+                <div class="modal-formfield checkbox">
+                    <label class="modal-label checkbox">
+              <input
+                class="modal-checkbox__input visually-hidden"
+                type="checkbox"
+              />
+              <!-- <span class="modal-checkbox__icon"></span> -->
+              <svg class="checkbox__icon" width="16" height="15">
+                <use href="./images/icons.svg#checkbox2" />
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox__link" href="./portfolio.html"
+                >Условия договора</a
+              >
+            </label>
+                </div>
                 <button type="submit" class="btn-primary modal-btn">Отправить</button>
             </form>
         </div>

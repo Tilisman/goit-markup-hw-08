@@ -14,12 +14,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /*  */
-    min-height: 581px;
-    min-width: 528px;
+    min-width: 450px;
+    min-height: 609px;
     padding: 40px;
     /*  */
     background-color: $primary-white;
     transition: $transition-dur $cubic-bezier;
+    @media (max-width: 479px) {
+        min-width: 95%;
+    }
+    @media (min-width: $desktop) {
+        max-width: 528px;
+    }
 }
 
 .backdrop {
