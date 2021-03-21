@@ -34,7 +34,9 @@
 .subscribtion-form__input {
     background-color: transparent;
     color: $color-lightgrey;
-    width: 358px;
+    // width: 358px;
+    min-width: 300px;
+    max-width: 358px;
     height: 50px;
     padding: 14px 16px;
     margin-bottom: 20px;
@@ -53,11 +55,11 @@
         color: $color-lightgrey;
         background-color: transparent;
     }
-    @media screen and (min-width: $tablet) {
+    @media (min-width: $tablet) {
         min-width: 450px;
     }
-    @media screen and (min-width: $desktop) {
-        min-width: 358px;
+    @media (min-width: $desktop) {
+        max-width: 358px;
         margin-bottom: 0;
         margin-right: 12px;
     }

@@ -225,7 +225,6 @@ address {
   }
 }
 
-/* -----Header nobile menu styles----- */
 .menu-container {
   position: fixed;
   top: 0;
@@ -328,6 +327,66 @@ address {
 
 .mobile-nav__link.current {
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__link--mobile.tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.contacts__link--mobile.email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 64px;
+}
+
+.mobile-social__item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.mobile-social__item--line:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -21px;
+  width: 22px;
+  height: 0px;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mobile-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-social__link:hover, .mobile-social__link:focus {
+  text-decoration: underline;
 }
 
 .__logo {
@@ -776,7 +835,8 @@ address {
 .subscribtion-form__input {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
-  width: 358px;
+  min-width: 300px;
+  max-width: 358px;
   height: 50px;
   padding: 14px 16px;
   margin-bottom: 20px;
@@ -803,15 +863,15 @@ address {
   background-color: transparent;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .subscribtion-form__input {
     min-width: 450px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .subscribtion-form__input {
-    min-width: 358px;
+    max-width: 358px;
     margin-bottom: 0;
     margin-right: 12px;
   }
