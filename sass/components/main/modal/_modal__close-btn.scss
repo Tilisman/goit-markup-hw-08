@@ -1,4 +1,4 @@
-.button-modal-close svg {
+.button-close__icon {
     display: flex;
     justify-content: center;
     fill: currentColor;
@@ -6,9 +6,18 @@
     height: 18px;
     border-radius: 50%;
     transition: $transition-dur $cubic-bezier;
+    transition: $transition-dur $cubic-bezier;
+    // transform: rotate(0deg);
+    transform: scale(1);
+    &:hover {
+        color: $accent-color;
+        cursor: pointer;
+        // transform: rotate(90deg);
+        transform: scale(1.1);
+    }
 }
 
-.button-modal-close {
+.modal__button-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -24,22 +33,17 @@
     &:focus {
         box-shadow: 0px 0px 0px 3px $primary-btn-accent;
     }
-    &:hover {
+    &:hover+.button-close__icon {
         box-shadow: none;
+        transform: rotateX(90);
     }
     &:active {
         color: $accent-color;
     }
 }
 
-.button-modal-close svg {
-    transition: $transition-dur $cubic-bezier;
-    &:hover {
-        color: $accent-color;
-        cursor: pointer;
-    }
-}
+.button-close__icon {}
 
-.button-modal-close:focus+svg {
+.button-close__icon:focus {
     fill: currentColor;
 }
