@@ -1,14 +1,20 @@
 //* !===  Filter Button List === */
 .btn-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    @media screen and (min-width: $tablet) {
+        @include flexCenter;
+        margin-bottom: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 
-.btn-list li {
+.btn-list__item {
     background-color: $primary-white;
-    margin-left: 8px;
+    margin: 0 8px 15px 0;
 }
 
 .btn-list button {

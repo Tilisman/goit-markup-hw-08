@@ -19,56 +19,71 @@
     <!-- !Page-Header! -->
 
     <header class="page-header">
-        <div class="container wrapper--page-header">
-            <!-- Навигация -->
-            <nav class="nav">
+        <div class="container container--page-header">
+            <!--*NAVIGATION -->
+            <div class="header-wrapper">
                 <a href="./index.html" class="__logo">
-                        Web<span class="__logo--black">Studio</span>
-                    </a>
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="./index.html" class="nav__link">Cтудия</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="./portfolio.html" class="nav__link current">
-                                Портфолио</a
-                            >
+            Web<span class="__logo--black">Studio</span>
+          </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="./index.html" class="nav__link">Cтудия</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contacts" class="nav__link">Контакты</a>
+                            <a href="./portfolio.html" class="nav__link current">
+                  Портфолио</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--*Контакты -->
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link __link--mobile tel">
+                            <svg class="contacts__icon">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg> info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link __link--mobile email">
+                            <svg class="contacts__icon">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg> +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            <!-- Контакты -->
-            <ul class="contacts__list">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__icon">
-                                <use href="./sprite.svg#mail"></use>
-                            </svg> info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__icon">
-                                <use href="./sprite.svg#smartphone"></use>
-                            </svg> +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <button class="btn-menu js-open-menu" js-open-menu>
+            <svg class="btn-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#menu-burger" />
+            </svg>
+          </button>
+            </div>
         </div>
     </header>
-
+    <!-- !=== PORTFOLIO ===! -->
     <main>
         <section class="section portfolio">
-            <div class="portfolio-container">
+            <div class="container portfolio-container">
                 <h1 class="title visually-hidden">Портфолио</h1>
                 <ul class="btn-list">
-                    <li><button type="button">Все</button></li>
-                    <li><button type="button">Веб-сайты</button></li>
-                    <li><button type="button">Приложения</button></li>
-                    <li><button type="button">Дизайн</button></li>
-                    <li><button type="button">Маркетинг</button></li>
+                    <li class="btn-list__item"><button type="button">Все</button></li>
+                    <li class="btn-list__item">
+                        <button type="button">Веб-сайты</button>
+                    </li>
+                    <li class="btn-list__item">
+                        <button type="button">Приложения</button>
+                    </li>
+                    <li class="btn-list__item">
+                        <button type="button">Дизайн</button>
+                    </li>
+                    <li class="btn-list__item">
+                        <button type="button">Маркетинг</button>
+                    </li>
                 </ul>
 
                 <ul class="portfolio__list">
@@ -99,9 +114,7 @@
                                 </div>
                             </div>
                             <div class="card__textbox">
-                                <h2 class="card-title">
-                                    Постер New Orlean vs Golden Star
-                                </h2>
+                                <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
                                 <p class="card__text">Дизайн</p>
                             </div>
                         </a>
@@ -165,9 +178,7 @@
                                 </div>
                             </div>
                             <div class="card__textbox">
-                                <h2 class="card-title">
-                                    Inspiration has no Borders
-                                </h2>
+                                <h2 class="card-title">Inspiration has no Borders</h2>
                                 <p class="card__text">Веб-сайт</p>
                             </div>
                         </a>
@@ -183,9 +194,7 @@
                                 </div>
                             </div>
                             <div class="card__textbox">
-                                <h2 class="card-title">
-                                    Издание Limited Edition
-                                </h2>
+                                <h2 class="card-title">Издание Limited Edition</h2>
                                 <p class="card__text">Дизайн</p>
                             </div>
                         </a>
@@ -236,30 +245,26 @@
 
                 <div class="address__container">
                     <a href="./index.html" class="__logo">
-                            Web<span class="__logo __logo--white">Studio</span>
-                        </a>
+              Web<span class="__logo __logo--white">Studio</span>
+            </a>
                     <address class="address">
-                            <a
-                                href="https://goo.gl/maps/UhhwCVumLmPJmTvy5"
-                                class="address__link location"
-                            >
-                                г. Киев, пр-т Леси Украинки, 26</a
-                            >
-                            <p>
-                                <a
-                                    href="mailto:info@example.com"
-                                    class="address__link"
-                                    >info@example.com</a
-                                >
-                            </p>
-                            <p>
-                                <a
-                                    href="tel:+380991111111"
-                                    class="address__link"
-                                    >+38 099 111 11 11</a
-                                >
-                            </p>
-                        </address>
+              <a
+                href="https://goo.gl/maps/UhhwCVumLmPJmTvy5"
+                class="address__link location"
+              >
+                г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <p>
+                <a href="mailto:info@example.com" class="address__link"
+                  >info@example.com</a
+                >
+              </p>
+              <p>
+                <a href="tel:+380991111111" class="address__link"
+                  >+38 099 111 11 11</a
+                >
+              </p>
+            </address>
                 </div>
                 <!--* FOOTER SOCIAL LINKS  -->
                 <div class="social">
@@ -268,37 +273,29 @@
                         <li class="social__item">
                             <a href="#" class="social__link">
                                 <svg class="social__icon">
-                                        <use
-                                            href="./images/icons.svg#instagram"
-                                        ></use>
-                                    </svg>
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__link">
                                 <svg class="social__icon">
-                                        <use
-                                            href="./images/icons.svg#twitter"
-                                        ></use>
-                                    </svg>
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__link">
                                 <svg class="social__icon">
-                                        <use
-                                            href="./images/icons.svg#facebook"
-                                        ></use>
-                                    </svg>
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="" class="social__link">
                                 <svg class="social__icon">
-                                        <use
-                                            href="./images/icons.svg#linkedin"
-                                        ></use>
-                                    </svg>
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
                             </a>
                         </li>
                     </ul>
@@ -310,23 +307,18 @@
                         <input class="subscribtion-form__input" placeholder="E-mail" type="email" name="email" id="email" />
 
                         <button class="btn-primary footer-btn" type="submit">
-                                <span> Подписаться </span>
-                                <svg
-                                    class="button-footer-icon"
-                                    width="24px"
-                                    height="24px"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-send"
-                                    ></use>
-                                </svg>
-                            </button>
+                <span> Подписаться </span>
+                <svg class="button-footer-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

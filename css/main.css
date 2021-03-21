@@ -1633,9 +1633,6 @@ svg.modal__icon {
 
 /* !=== CONTAINER ===! */
 .portfolio-container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1649,8 +1646,14 @@ svg.modal__icon {
   padding: 0 15px;
 }
 
-.portfolio.section {
-  padding: 94px 0;
+.portfolio.section .portfolio {
+  padding: 60px 0;
+}
+
+@media (min-width: 1200px) {
+  .portfolio.section .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .portfolio__list {
@@ -1669,18 +1672,35 @@ svg.modal__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
-.btn-list li {
+@media screen and (min-width: 768px) {
+  .btn-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-list {
+    margin-bottom: 50px;
+  }
+}
+
+.btn-list__item {
   background-color: #ffffff;
-  margin-left: 8px;
+  margin: 0 8px 15px 0;
 }
 
 .btn-list button {

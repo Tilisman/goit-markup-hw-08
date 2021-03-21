@@ -3,9 +3,9 @@
 /* !=== CONTAINER ===! */
 
 .portfolio-container {
-    width: $cont-width;
-    margin-left: auto;
-    margin-right: auto;
+    // width: $cont-width;
+    // margin-left: auto;
+    // margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,7 +13,12 @@
 }
 
 .portfolio.section {
-    padding: 94px 0;
+    .portfolio {
+        padding: 60px 0;
+        @media (min-width: $desktop) {
+            padding: 94px 0;
+        }
+    }
 }
 
 .portfolio__list {
