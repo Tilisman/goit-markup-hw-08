@@ -36,6 +36,7 @@
     color: $color-lightgrey;
     // width: 358px;
     // min-width: 300px;
+    // width: 450px;
     width: 450px;
     height: 50px;
     padding: 14px 16px;
@@ -56,11 +57,11 @@
         background-color: transparent;
     }
     @media (max-width: 460px) {
-        width: 320px;
+        width: 90vw;
     }
-    @media (max-width: 350px) {
-        width: 300px;
-    }
+    // @media (max-width: 350px) {
+    //     width: 300px;
+    // }
     @media (min-width: $desktop) {
         max-width: 358px;
         margin-bottom: 0;

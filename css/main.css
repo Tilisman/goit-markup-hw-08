@@ -864,13 +864,7 @@ address {
 
 @media (max-width: 460px) {
   .subscribtion-form__input {
-    width: 320px;
-  }
-}
-
-@media (max-width: 350px) {
-  .subscribtion-form__input {
-    width: 300px;
+    width: 90vw;
   }
 }
 
