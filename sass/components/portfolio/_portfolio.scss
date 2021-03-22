@@ -1,11 +1,6 @@
 // !=== PORTFOLIO ===!
-
-/* !=== CONTAINER ===! */
-
+//** === CONTAINER === */
 .portfolio-container {
-    // width: $cont-width;
-    // margin-left: auto;
-    // margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,16 +8,13 @@
 }
 
 .portfolio.section {
-    .portfolio {
-        padding: 60px 0;
-        @media (min-width: $desktop) {
-            padding: 94px 0;
-        }
+    padding: 60px 0;
+    @media (min-width: $desktop) {
+        padding: 94px 0;
     }
 }
 
 .portfolio__list {
-    display: block;
     @media (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
