@@ -22,10 +22,13 @@
 }
 
 .portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    margin-left: -1 * $set-gap;
-    margin-top: -1 * $set-gap;
+    display: block;
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        margin-left: -1 * $set-gap;
+        margin-top: -1 * $set-gap;
+    }
 }
