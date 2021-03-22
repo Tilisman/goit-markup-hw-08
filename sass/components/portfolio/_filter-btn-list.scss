@@ -13,12 +13,13 @@
 }
 
 .btn-list__item {
-    background-color: $primary-white;
+    background-color: transparent;
     margin: 0 8px 15px 0;
 }
 
 .btn-list button {
     border: transparent;
+    background-color: rgba(70, 70, 70, 0.1);
     border-radius: 4px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
