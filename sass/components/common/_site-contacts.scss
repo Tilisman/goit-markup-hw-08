@@ -2,20 +2,21 @@
 
 .contacts__list {
     display: none;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
         display: flex;
         flex-direction: column;
         margin-top: auto;
         margin-bottom: auto;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
         flex-direction: row;
+        margin-left: 305px;
     }
 }
 
 .contacts__item:not(:first-child) {
     @media (min-width: $desktop) {
-        margin-left: 50px;
+        margin-left: 30px;
     }
 }
 

@@ -6,8 +6,8 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 26px;
-    line-height: 1.192;
+    font-size: 24px;
+    line-height: 1.174;
     letter-spacing: 0.03em;
     // margin-right: 94px;
     padding: 15px 0;
@@ -15,6 +15,10 @@
         padding-top: 25px;
         padding-bottom: 25px;
     }
+}
+
+.footer .__logo {
+    padding: 0;
 }
 
 .__logo--black {

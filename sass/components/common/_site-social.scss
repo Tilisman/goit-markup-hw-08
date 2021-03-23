@@ -44,6 +44,7 @@
 }
 
 .social__item {
+    line-height: 1.155;
     box-shadow: none;
     margin-bottom: 30px;
     &:focus {
@@ -53,6 +54,7 @@
 
 .footer .social__item {
     margin-bottom: 0;
+    height: 44px;
 }
 
 .social__icon {

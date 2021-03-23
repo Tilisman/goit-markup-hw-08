@@ -32,12 +32,15 @@
     display: block;
     color: $color-lightgrey;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 14px;
-    line-height: 1.714;
+    line-height: 1.514;
     letter-spacing: 0.03em;
     transition: $transition-dur $cubic-bezier;
     margin-bottom: 8px;
+    @media (min-width: $desktop) {
+        margin-bottom: 9px;
+    }
     &:hover {
         color: $primary-white;
     }

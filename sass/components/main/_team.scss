@@ -11,9 +11,10 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin-top: 50px;
+        // margin-top: 50px;
         margin-left: calc(-1 * #{$set-gap});
     }
+    @media (min-width: $desktop) {}
 }
 
 .team__item {
@@ -28,6 +29,7 @@
     @media screen and (min-width: $tablet) {
         flex-basis: calc(100% / 2 - #{$set-gap});
         margin-left: #{$set-gap};
+        margin-top: 0;
     }
     @media screen and (min-width: $desktop) {
         flex-basis: calc(100% / 4 - #{$set-gap});
